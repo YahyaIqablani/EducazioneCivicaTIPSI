@@ -214,7 +214,27 @@ namespace EducazioneCivica
             
             
                  
-                return false;
+                try{
+                
+                
+                
+                n = counter;
+                if (n % 2 == 0)
+                {
+                    TerzoPunto(s, n);
+                }
+                else
+                {
+                    QuartoPunto(s, n);
+                }
+                
+                
+            
+            }
+            catch
+            {
+                
+            }
             
                 
         }

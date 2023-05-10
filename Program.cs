@@ -24,6 +24,8 @@ namespace EducazioneCivica
                     break;
                     case 4: QuartoPunto(s, n);
                     break;
+                    case 5: QuintoPunto(s, n);
+                    break;
                     
                     
                 }
@@ -43,6 +45,7 @@ namespace EducazioneCivica
          static string result2 ="";
          static int result3 = 0;
          static double result4 = 0;
+         static int result5=0;
         
         
 
@@ -155,6 +158,12 @@ namespace EducazioneCivica
                 
             }
                 
+        }
+        public static void QuintoPunto(string s,int n)
+        {
+                        
+            
+            return false;
         }
        
 

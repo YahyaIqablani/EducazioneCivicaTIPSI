@@ -132,7 +132,28 @@ namespace EducazioneCivica
         }
         public static void QuartoPunto(string s,int n)
         {
-             return false;
+             try{
+                
+             
+                int product = 1;
+                foreach (char c in s)
+                {
+                    if (char.IsLetter(c))
+                    {
+                        int value = char.ToLower(c) - 'a' + 1;
+                        product *= value;
+                        
+                        Console.WriteLine(c + " = " + value);
+                    }
+                }
+                 result4 = Math.Ceiling((double)product / n);
+                Console.WriteLine($"Punto 4: (" + product + ") / " + n + " = " + result4);
+                
+            }
+            catch
+            {
+                
+            }
                 
         }
        

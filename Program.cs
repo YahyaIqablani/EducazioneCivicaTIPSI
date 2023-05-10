@@ -74,7 +74,29 @@ namespace EducazioneCivica
         }
         public static void SecondoPunto(string s,int n)
         {
-            return false;
+            try{
+                
+           
+                char[] arr2 = s.ToCharArray();
+                for (int i = 0; i < arr2.Length; i++)
+                {
+                    if (char.IsLetter(arr2[i]))
+                    {
+                        char c = (char)(arr2[i] - n);
+                        if (c < 'a')
+                            c = (char)(c + 26);
+                        arr2[i] = c;
+                    }
+                }
+                result2 = new string(arr2);
+                Console.WriteLine($"Punto 2: {result2}");
+
+                
+            }
+            catch
+            {
+                
+            }
                 
         }
        

@@ -33,6 +33,7 @@ namespace EducazioneCivica
         
         static string s ="";
         static int n = 0;
+        static string result1="";
         
         
 
@@ -41,7 +42,31 @@ namespace EducazioneCivica
         
         public static void PrimoPunto(string s,int n)
         {
-            return false;
+           try{
+            
+                
+
+                // Punto 1
+                char[] arr1 = s.ToCharArray();
+                for (int i = 0; i < arr1.Length; i++)
+                {
+                    if (char.IsLetter(arr1[i]))
+                    {
+                        char c = (char)(arr1[i] + n);
+                        if (c > 'z')
+                            c = (char)(c - 26);
+                        arr1[i] = c;
+                    }
+                }
+                result1 = new string(arr1);
+                Console.WriteLine($"Punto 1: {result1}");
+                
+                
+            }
+            catch
+            {
+                
+            }
                 
         }
        

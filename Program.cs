@@ -18,6 +18,8 @@ namespace EducazioneCivica
                 {
                     case 1: PrimoPunto(s, n);
                     break;
+                    case 2: SecondoPunto(s, n);
+                    break;
                     
                     
                 }
@@ -34,6 +36,7 @@ namespace EducazioneCivica
         static string s ="";
         static int n = 0;
         static string result1="";
+         static string result2 ="";
         
         
 
@@ -46,7 +49,7 @@ namespace EducazioneCivica
             
                 
 
-                // Punto 1
+                
                 char[] arr1 = s.ToCharArray();
                 for (int i = 0; i < arr1.Length; i++)
                 {
@@ -67,6 +70,11 @@ namespace EducazioneCivica
             {
                 
             }
+                
+        }
+        public static void SecondoPunto(string s,int n)
+        {
+            return false;
                 
         }
        

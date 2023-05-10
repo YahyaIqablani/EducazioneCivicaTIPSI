@@ -104,7 +104,27 @@ namespace EducazioneCivica
         }
         public static void TerzoPunto(string s,int n)
         {
-             return false;
+             try{
+                
+             
+                int sum = 0;
+
+                foreach (char c in s)
+                {
+                    int value = char.ToLower(c) - 'a' + 1;
+                    sum += value;
+                    Console.WriteLine(c + " = " + value);
+                }
+
+                 result3 = sum * n;
+
+                Console.WriteLine($"Punto 3: (" + sum + ") * " + n + " = " + result3);
+                
+            }
+            catch
+            {
+               
+            }
                 
         }
        

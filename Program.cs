@@ -192,7 +192,17 @@ namespace EducazioneCivica
             
             
             
-                return false;
+                try{
+                
+                
+                Console.WriteLine($"Punto 6: {counter}");
+                
+            
+            }
+            catch
+            {
+                
+            }
             
                 
         }

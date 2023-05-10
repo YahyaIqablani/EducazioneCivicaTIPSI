@@ -46,6 +46,7 @@ namespace EducazioneCivica
          static int result3 = 0;
          static double result4 = 0;
          static int result5=0;
+         static int counter=0;
         
         
 
@@ -163,7 +164,27 @@ namespace EducazioneCivica
         {
                         
             
-            return false;
+            try{
+                
+             
+                
+                if (n % 2 == 0)
+                {
+                     TerzoPunto(s, n);
+                }
+                else
+                {
+                     QuartoPunto(s, n);
+                }
+
+                counter++;
+                
+            
+            }
+            catch
+            {
+                
+            }
         }
        
 
